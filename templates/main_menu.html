@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Menu - Cake Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="icons">
+            <a href="{{ url_for('login') }}" class="account-icon"><i class="fas fa-user"></i></a>
+            <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <h1>Welcome to Our Cake Store!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Cakes</a></li>
+            <li><a href="#">Special Occasions</a></li>
+            <li><a href="#">Custom Orders</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="cake-list">
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake1.jpg') }}" alt="Cake 1">
+            <h2>Delicious Chocolate Cake</h2>
+            <p>Indulge in our rich chocolate cake...</p>
+            <a href="{{ url_for('add_to_cart', item_id=1) }}">Add to Cart</a>
+
+           <!-- <button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake2.jpg') }}" alt="Cake 2">
+            <h2>Strawberry Dream</h2>
+            <p>Experience the sweetness of strawberries...</p>
+            <a href="{{ url_for('add_to_cart', item_id=2) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake3.jpg') }}" alt="Cake 3">
+            <h2>Vanilla Elegance</h2>
+            <p>A classic choice for every occasion...</p>
+            <a href="{{ url_for('add_to_cart', item_id=3) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake4.jpg') }}" alt="Cake 4">
+            <h2>Red Velvet Delight</h2>
+            <p>Experience the luxury of red velvet...</p>
+            <a href="{{ url_for('add_to_cart', item_id=4) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake5.jpg') }}" alt="Cake 5">
+            <h2>Luscious Lemon Cake</h2>
+            <p>Zesty and refreshing lemon flavor...</p>
+            <a href="{{ url_for('add_to_cart', item_id=5) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake6.jpg') }}" alt="Cake 6">
+            <h2>Black Forest Fantasy</h2>
+            <p>Rich layers of chocolate and cherries...</p>
+            <a href="{{ url_for('add_to_cart', item_id=6) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake7.jpg') }}" alt="Cake 7">
+            <h2>Mango Tango</h2>
+            <p>Taste the tropical goodness of mango...</p>
+            <a href="{{ url_for('add_to_cart', item_id=7) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake8.jpg') }}" alt="Cake 8">
+            <h2>Coconut Paradise</h2>
+            <p>Escape to a paradise of coconut flavor...</p>
+            <a href="{{ url_for('add_to_cart', item_id=8) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake9.jpg') }}" alt="Cake 9">
+            <h2>Hazelnut Indulgence</h2>
+            <p>Experience the nutty delight of hazelnut...</p>
+            <a href="{{ url_for('add_to_cart', item_id=9) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+        <div class="cake">
+            <img src="{{ url_for('static', filename='cake10.jpg') }}" alt="Cake 10">
+            <h2>Caramel Bliss</h2>
+            <p>Indulge in the rich flavors of caramel...</p>
+            <a href="{{ url_for('add_to_cart', item_id=10) }}">Add to Cart</a>
+
+            <!--<button>Add to Cart</button>-->
+        </div>
+    </section>
+    <section class="banner2">
+        <h2>Cover Your Cookies</h2>
+        <p>Introducing the delicious spinoff of the #1 <br>
+        Amazon bestselling card game, Cover Your Assets.<br>
+        Check it out at your local Crumbl store today!</p>
+        <button class="button">Order Now</button>
+    </section>
+    <section class="categories">
+        <h2>Categories</h2>
+        <p>Explore our wide range of cake categories...</p>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="{{ url_for('static', filename='category1.jpg') }}" alt="Category 1">
+                <h3>Chocolate Delights</h3>
+                <p>Indulge in our rich chocolate cakes...</p>
+                <a href="#" class="category-link">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="{{ url_for('static', filename='category2.png') }}" alt="Category 2">
+                <h3>Fruit Delicacies</h3>
+                <p>Enjoy the freshness of fruity cakes...</p>
+                <a href="#" class="category-link">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="{{ url_for('static', filename='category3.jpeg') }}" alt="Category 3">
+                <h3>Classic Favorites</h3>
+                <p>Discover our timeless classic cake recipes...</p>
+                <a href="#" class="category-link">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="{{ url_for('static', filename='category4.png') }}" alt="Category 4">
+                <h3>Special Occasions</h3>
+                <p>Celebrate with cakes designed for special moments...</p>
+                <a href="#" class="category-link">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="{{ url_for('static', filename='category5.jpg') }}" alt="Category 5">
+                <h3>Cupcake Delights</h3>
+                <p>Enjoy our assortment of delicious cupcakes...</p>
+                <a href="#" class="category-link">Explore</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="banner">
+        <h2>Special Offer!</h2>
+        <p>Get 20% off on all cakes this month.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Cake Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
